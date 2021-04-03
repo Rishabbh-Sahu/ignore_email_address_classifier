@@ -1,0 +1,18 @@
+# important paths data/model etc.
+data_path : './data/No_reply_sender_emails.csv'
+model_path : 'https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-2_H-128_A-2/1'
+saved_model_dir_path : 'saved_model'
+model_name : 'temp'
+model_version : 'v1'
+
+# Input data info
+text_field_name : 'email_address'
+label_field_name : 'is_important'
+
+# Model parameters
+EMB_DIM : 25 #200
+CNN_FILTERS : 25 #100
+DNN_UNITS : 16 #256
+DROPOUT_RATE : 0.5 #0.2
+BATCH_SIZE : 16
+EPOCHS : 1
