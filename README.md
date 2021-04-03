@@ -12,6 +12,10 @@ This repo can be used for any text(english lanugage) classification task leverag
 #### For training
 - python training.py 
 
+#### Score
+- Training accuracy after 1-epoch ~99% 
+- Validation accuracy ~99%
+
 #### Reference:
 https://stackabuse.com/text-classification-with-bert-tokenizer-and-tf-2-0-in-python/
 
