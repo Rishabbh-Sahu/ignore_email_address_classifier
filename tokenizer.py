@@ -10,8 +10,8 @@ def create_bert_tokenizer(model_path):
     '''
     Languate en, bert tokenizer to split words in their appropriate sub-tokens and
     use the these as a part of embedding layer
-    :param model_path: Bert variant tensorflow-hub model path
-    :return: bert tokenizer
+    Bert variant tensorflow-hub model path : param model_path
+    Bert tokenizer:return
     '''
     BertTokenizer = bert.bert_tokenization.FullTokenizer
     bert_layer = hub.KerasLayer("https://tfhub.dev/tensorflow/small_bert/bert_en_uncased_L-2_H-128_A-2/1",trainable=False)
@@ -24,9 +24,9 @@ def create_bert_tokenizer(model_path):
 
 def tokenize_text(text,tokenizer):
     '''
-    :param text: Text to tokenize
-    :param tokenizer: tokenizer used for word splitting
-    :return: stream of sub-tokens after tokenization
+    Text to tokenize : param text
+    tokenizer used for word splitting : param tokenizer
+    Stream of sub-tokens after tokenization:return
     '''
     return tokenizer.convert_tokens_to_ids(tokenizer.tokenize(text))
 
