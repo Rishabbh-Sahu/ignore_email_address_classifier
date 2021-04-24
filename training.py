@@ -56,11 +56,14 @@ tokenized_text = [tokenize_text(text,tokenizer) for text in text_data]
 
 text_with_len = [[text, label_data[i], len(text)] for i, text in enumerate(tokenized_text)]
 random.shuffle(text_with_len)
+      
+# sort the sequence of tokens based on the length
 text_with_len.sort(key=lambda x: x[2])
 
 sorted_text_labels = [(text[0], text[1]) for text in text_with_len]
 processed_dataset = tf.data.Dataset.from_generator(lambda: sorted_text_labels, output_types=(tf.int32, tf.int32))
 
+# Dynamic sequence length batches with the length as longest token sequence in that batch
 BATCH_SIZE = config['BATCH_SIZE']
 batched_dataset = processed_dataset.padded_batch(BATCH_SIZE, padded_shapes=((None, ), ()))
 next(iter(batched_dataset))
