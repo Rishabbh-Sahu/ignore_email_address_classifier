@@ -10,7 +10,7 @@ class TEXT_MODEL(tf.keras.Model):
 
     def __init__(self,
                  vocabulary_size,
-                 embedding_dimensions=128,
+                 embedding_dimensions=128, #this parameter lead to increase in the size of the model
                  cnn_filters=50,
                  dnn_units=512,
                  model_output_classes=2,
@@ -54,7 +54,7 @@ class TEXT_MODEL(tf.keras.Model):
         l_3 = self.pool(l_3)
 
         concatenated = tf.concat([l_1, l_2, l_3], axis=-1)  # (batch_size, 3 * cnn_filters)
-        # concatenated = tf.concat([l_1, l_2], axis=-1)
+        # concatenated = tf.concat([l_1, l_2], axis=-1)     
         concatenated = self.dense_1(concatenated)
         concatenated = self.dropout(concatenated, training)
         model_output = self.last_dense(concatenated)
