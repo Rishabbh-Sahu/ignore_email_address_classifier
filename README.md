@@ -12,9 +12,12 @@ This repo can be used for any text(english lanugage) classification task leverag
 #### For training
 - python training.py 
 
-#### Score
+#### Model validation
 - Training accuracy after 1-epoch ~99% 
 - Validation accuracy ~99%
+
+#### Experiments:
+1) Instead of using bert tokenizer, we can create our own word embeddings based on the dataset by using Embedding layer and tune its dimension to based on f1 score 
 
 #### Reference:
 https://stackabuse.com/text-classification-with-bert-tokenizer-and-tf-2-0-in-python/
