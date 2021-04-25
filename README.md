@@ -18,6 +18,7 @@ This repo can be used for any text(english lanugage) classification task leverag
 
 #### Experiments:
 1) Instead of using bert tokenizer, we can create our own word embeddings based on the dataset by using Embedding layer and tune its dimension to based on f1 score 
+2) BPE (byte pair encoding) can be explored for text tokenization with vocab size 2k, 5k, 10k etc. Use this link for the same - https://github.com/rsennrich/subword-nmt/blob/master/subword_nmt/learn_bpe.py
 
 #### Reference:
 https://stackabuse.com/text-classification-with-bert-tokenizer-and-tf-2-0-in-python/
