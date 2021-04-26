@@ -21,7 +21,7 @@ This repo can be used for any text(english lanugage) classification task leverag
 2) BPE (byte pair encoding) can be explored for text tokenization with vocab size 2k, 5k, 10k etc. Use this link to explore it further - https://github.com/rsennrich/subword-nmt/blob/master/subword_nmt/learn_bpe.py
 
 #### Usages:
-This model can be used to perform any text classification tasks like intent, sentiments etc. 
+This model can be used to perform any text classification tasks like intent, sentiments, toxic comments identification etc. 
 
 #### Reference:
 https://stackabuse.com/text-classification-with-bert-tokenizer-and-tf-2-0-in-python/
