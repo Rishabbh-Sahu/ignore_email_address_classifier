@@ -20,8 +20,13 @@ This repo can be used for any text(english lanugage) classification task leverag
 1) Instead of using bert tokenizer, we can create our own word embeddings based on the dataset by using Embedding layer and tune its dimension to based on f1 score 
 2) BPE (byte pair encoding) can be explored for text tokenization with vocab size 2k, 5k, 10k etc. Use this link to explore it further - https://github.com/rsennrich/subword-nmt/blob/master/subword_nmt/learn_bpe.py
 
-#### Usages:
-This model can be used to perform any text classification tasks like intent, sentiments, toxic comments identification etc. 
+#### Can be used for:
+To perform any text classification tasks like intent, sentiments, toxic comments identification etc. Below are some open source datasets for the reference.
+
+#### Datasets to explore:
+for toxic-comment-classification: https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data
+
+For sentiment analysis of IMDB reviews: https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
 
 #### Reference:
 https://stackabuse.com/text-classification-with-bert-tokenizer-and-tf-2-0-in-python/
