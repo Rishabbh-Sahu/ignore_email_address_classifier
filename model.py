@@ -11,7 +11,7 @@ class TEXT_MODEL(tf.keras.Model):
     def __init__(self,
                  vocabulary_size,
                  embedding_dimensions=128, #this parameter lead to increase in the size of the model
-                 cnn_filters=50,
+                 cnn_filters=50, #parallel fields for processing words
                  dnn_units=512,
                  model_output_classes=2,
                  dropout_rate=0.1,
