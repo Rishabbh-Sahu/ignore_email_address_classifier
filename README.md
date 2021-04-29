@@ -9,6 +9,9 @@ This repo can be used for any text(english lanugage) classification task leverag
 - install requirements 
 - Open config.yaml file and modify parameters as per your setup
 
+#### Data source
+https://www.kaggle.com/wcukierski/enron-email-dataset
+
 #### For training
 - python training.py 
 
