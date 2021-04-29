@@ -10,7 +10,7 @@ This repo can be used for any text(english lanugage) classification task leverag
 - Open config.yaml file and modify parameters as per your setup
 
 #### Data source
-https://www.kaggle.com/wcukierski/enron-email-dataset
+https://www.kaggle.com/wcukierski/enron-email-dataset - After close look for some random emails, created the label (important vs ignore) based on email-ids. 
 
 #### For training
 - python training.py 
