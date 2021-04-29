@@ -21,6 +21,7 @@ class TEXT_MODEL(tf.keras.Model):
 
         self.embedding = layers.Embedding(vocabulary_size,
                                           embedding_dimensions)
+        #Feature Learning 
         self.cnn_layer1 = layers.Conv1D(filters=cnn_filters,
                                         kernel_size=2,
                                         padding="valid",
@@ -33,8 +34,10 @@ class TEXT_MODEL(tf.keras.Model):
                                         kernel_size=4,
                                         padding="valid",
                                         activation="relu")
+        #Pooling is required to down sample the detection of features in feature maps
         self.pool = layers.GlobalMaxPool1D()
 
+        #Classification neural network
         self.dense_1 = layers.Dense(units=dnn_units, activation="relu")
         self.dropout = layers.Dropout(rate=dropout_rate)
         if model_output_classes == 2:
