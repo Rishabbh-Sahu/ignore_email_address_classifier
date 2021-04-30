@@ -18,7 +18,11 @@ class TEXT_MODEL(tf.keras.Model):
                  training=False,
                  name="text_model"):
         super(TEXT_MODEL, self).__init__(name=name)
-
+        '''
+        for text classfication, do try the following word embeddings -
+            word2vec from jensim
+            GloVe from google
+        '''
         self.embedding = layers.Embedding(vocabulary_size,
                                           embedding_dimensions)
         #Feature Learning 
