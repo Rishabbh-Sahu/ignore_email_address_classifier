@@ -18,6 +18,7 @@ class TEXT_MODEL(tf.keras.Model):
                  training=False,
                  name="text_model"):
         super(TEXT_MODEL, self).__init__(name=name)
+        
         '''
         for text classfication, do try the following word embeddings -
             word2vec from jensim - guide of using this can found here - "https://radimrehurek.com/gensim/models/word2vec.html"
