@@ -18,6 +18,7 @@ https://www.kaggle.com/wcukierski/enron-email-dataset - After close look for som
 #### Model validation
 - **Training accuracy after 1-epoch ~99%** 
 - **Validation accuracy ~99%**
+*Note: Try running for more epochs if you have very less data to get very good results
 
 #### Experiments:
 1) Instead of using bert tokenizer, we can create our own word embeddings based on the dataset by using embedding layer and tune embedding's dimension based on f1-score OR used pre-learned ones like word2vec, GloVe etc. - for the reference, pls do visit model.py (updated links)
