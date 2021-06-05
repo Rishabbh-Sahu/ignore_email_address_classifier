@@ -7,7 +7,7 @@ This repo can be used for any text(english lanugage) classification task leverag
 - create virtual environment
 - install tensorflow==2.4
 - install requirements 
-- Open config.yaml file and modify parameters as per your setup
+- **Open config.yaml file and modify parameters as per your setup**
 
 #### Data source
 https://www.kaggle.com/wcukierski/enron-email-dataset - After close look for some random emails, created the label (important vs ignore) based on email-ids. 
