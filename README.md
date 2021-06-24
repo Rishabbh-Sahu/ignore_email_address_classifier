@@ -27,6 +27,9 @@ https://www.kaggle.com/wcukierski/enron-email-dataset - After close look for som
 #### Can be used for:
 To perform any text classification tasks like intent, sentiments, toxic comments identification etc. Below are some open source datasets for the reference.
 
+#### Future scope:
+Add manual intervention to input the email-id for classification. 
+
 #### Datasets to explore:
 - Toxic-comment-classification: https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data <br>
 - Sentiment analysis of IMDB reviews: https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
