@@ -64,7 +64,7 @@ class TEXT_MODEL(tf.keras.Model):
         concatenated = tf.concat([l_1, l_2, l_3], axis=-1)  # (batch_size, 3 * cnn_filters)
         # concatenated = tf.concat([l_1, l_2], axis=-1)     # experiment by enabling/disabling layers and compute accuracy
         concatenated = self.dense_1(concatenated)
-        concatenated = self.dropout(concatenated, training)
-        model_output = self.last_dense(concatenated)
+        concatenated = self.dropout(concatenated, training) # Add droptout to avoid overfitting
+        model_output = self.last_dense(concatenated)        # Add prediction layer
 
         return model_output
