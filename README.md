@@ -24,7 +24,7 @@ https://www.kaggle.com/wcukierski/enron-email-dataset - After close look for som
 1) Instead of using bert tokenizer, we can create our own word embeddings based on the dataset by using embedding layer and tune embedding's dimension based on f1-score OR used pre-learned ones like word2vec, GloVe etc. - for the reference, pls do visit model.py (updated links)
 2) BPE (byte pair encoding) can be explored for text tokenization with vocab size 2k, 5k, 10k etc. Use this link to explore it further - https://github.com/rsennrich/subword-nmt/blob/master/subword_nmt/learn_bpe.py
 
-#### Can be used for:
+#### Other use-cases:
 To perform any text classification tasks like intent, sentiments, toxic comments identification etc. Below are some open source datasets for the reference.
 
 #### Future scope:
