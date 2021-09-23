@@ -1,7 +1,7 @@
 # ignore_email_address_classifier
 
 #### About this project
-This repo can be used for any text (english lanugage) classification task leveraging **Bert-tokenizer, CNN layers and framework "Tensorflow 2.4"**. By using few specific keyworks like "donotreply", "no-reply", "unsubscribe" etc. in the email address, I'd created labels as important/ignore-emails to enable supervised learning. Extended the vary concept of tokenization to email addresses and split them into sub-tokens (sub-words). Using the bert sub-tokens embedding and training them using CNN architecture, achieved very good accuracy with very few epochs. To enable GPU support, please do enable CUDA-11 in windows/linux/mac virtual environment for tf2.4 or use CUDA 10.1 for tf2.3. 
+This repo can be used for any text (english lanugage) classification task leveraging **Bert-tokenizer, CNN layers and framework "Tensorflow 2.4"**. By using few specific keyworks like "donotreply", "no-reply", "unsubscribe" etc. in the email address, I'd created labels as important/ignore-emails to enable supervised learning. Extended the vary concept of tokenization to email addresses and split them into sub-tokens (sub-words). Using the bert sub-tokens embedding and training them using CNN architecture, achieved very good accuracy with a very few epochs. To enable GPU support, please do enable CUDA-11 in windows/linux/mac virtual environment for tf2.4 or use CUDA 10.1 for tf2.3. 
 
 #### Getting started
 - create virtual environment
@@ -25,7 +25,7 @@ https://www.kaggle.com/wcukierski/enron-email-dataset - After close look for som
 2) BPE (byte pair encoding) can be explored for text tokenization with vocab size 2k, 5k, 10k etc. Use this link to explore it further - https://github.com/rsennrich/subword-nmt/blob/master/subword_nmt/learn_bpe.py
 
 #### Other use-cases:
-To perform any text classification tasks like intent, sentiments, toxic comments identification etc. Below are some open source datasets for the reference.
+To perform any **text classification tasks like intent, sentiments, toxic comments identification** etc. Below are some open source datasets for the reference.
 
 #### Future scope:
 Add manual intervention to input the email-id for classification. 
