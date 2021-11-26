@@ -10,7 +10,7 @@ This repo can be used for any text (english lanugage) classification task levera
 - Open **config.yaml** file and modify parameters as per your setup
 
 #### Data source
-https://www.kaggle.com/wcukierski/enron-email-dataset - After close look for some random emails, created the label (important vs ignore) based on email-ids. for e.g. some keywords like noreply, unsubscribe, information etc. relates to marketing or emails from unknown sources at times hence falls under the category of ignore-emails. 
+https://www.kaggle.com/wcukierski/enron-email-dataset - Post reviewing some random emails, created the label (important vs ignore) based on email-ids. for e.g. some keywords like noreply, unsubscribe, information etc. relates to marketing or emails from unknown sources at times hence falls under the category of ignore-emails. 
 
 #### For training
 - python training.py 
