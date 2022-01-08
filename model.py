@@ -26,7 +26,7 @@ class TEXT_MODEL(tf.keras.Model):
         '''
         self.embedding = layers.Embedding(vocabulary_size,
                                           embedding_dimensions)
-        #Feature Learning 
+        #Feature Learning using CNN layers
         self.cnn_layer1 = layers.Conv1D(filters=cnn_filters,
                                         kernel_size=2,
                                         padding="valid",
