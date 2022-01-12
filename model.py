@@ -21,8 +21,8 @@ class TEXT_MODEL(tf.keras.Model):
         
         '''
         for text classfication, do try the following word embeddings -
-            word2vec from jensim - guide of using this can be found here - "https://radimrehurek.com/gensim/models/word2vec.html"
-            GloVe from google - download the pre-learned embeddings from here "https://nlp.stanford.edu/projects/glove/"
+          word2vec from jensim - guide of using this can be found here - "https://radimrehurek.com/gensim/models/word2vec.html"
+          GloVe from google - download the pre-learned embeddings from here "https://nlp.stanford.edu/projects/glove/"
         '''
         self.embedding = layers.Embedding(vocabulary_size,
                                           embedding_dimensions)
