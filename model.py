@@ -51,8 +51,9 @@ class TEXT_MODEL(tf.keras.Model):
         else:
             self.last_dense = layers.Dense(units=model_output_classes,
                                            activation="softmax")
-
+    
     def call(self, inputs, training):
+        ''' Redefining the call function'''
         l = self.embedding(inputs)
         l_1 = self.cnn_layer1(l)
         l_1 = self.pool(l_1)
