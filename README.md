@@ -7,7 +7,7 @@ This repo can be used for any text (english lanugage) classification task levera
 - create virtual environment
 - install tensorflow==2.4
 - install requirements 
-- Open **config.yaml** file and modify parameters as per your setup
+- Open **config.yaml** file and modify parameters as per your setup. This will also allow us to perform experiments and refer them back for comparison. 
 
 #### Data source
 https://www.kaggle.com/wcukierski/enron-email-dataset - Post reviewing some random emails, created the label (important vs ignore) based on email-ids. for e.g. some keywords like noreply, unsubscribe, information etc. relates to marketing or emails from unknown sources at times hence falls under the category of ignore-emails. 
