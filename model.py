@@ -17,6 +17,7 @@ class TEXT_MODEL(tf.keras.Model):
                  dropout_rate=0.1,
                  training=False,
                  name="text_model"):
+        '''Constructor call'''
         super(TEXT_MODEL, self).__init__(name=name)
         
         '''
