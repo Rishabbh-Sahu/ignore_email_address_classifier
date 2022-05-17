@@ -1,4 +1,4 @@
-# ignore_email_address_classifier
+# <p align=center>ignore_email_address_classifier</p>
 
 #### About this project
 This repo can be used for any text (english lanugage) classification task leveraging **bert-tokenizer, CNN-layers and "Tensorflow 2.4" framework**. By using a few specific keyworks like **"donotreply", "no-reply", "unsubscribe"** etc. in the email address, I'd created labels as important/ignore-emails to enable supervised learning. Extended the vary concept of **tokenization to email addresses and split them into sub-tokens (a.k.a. sub-words)**. Using the **bert sub-tokens embedding** and training them using **CNN architecture**, achieved very good accuracy in a very few epochs. To enable GPU support, please do enable CUDA-11 in windows/linux/mac virtual environment for tf2.4 or use CUDA 10.1 for tf2.3. 
